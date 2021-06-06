@@ -15,7 +15,7 @@ namespace Persistence.Configuration
         {
             Builder.ToTable("Clientes");
 
-            Builder.HasKey(p => p.id);
+            Builder.HasKey(p => p.Id);
 
             Builder.Property(p => p.Nombre)
                    .HasMaxLength(80)

@@ -21,7 +21,7 @@ namespace Persistence.Migrations
 
             modelBuilder.Entity("Domain.Entities.Cliente", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -70,7 +70,7 @@ namespace Persistence.Migrations
                         .HasMaxLength(9)
                         .HasColumnType("nvarchar(9)");
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.ToTable("Clientes");
                 });

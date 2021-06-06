@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Persistence.Migrations
 {
-    public partial class primerMigration : Migration
+    public partial class picheful : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -11,7 +11,7 @@ namespace Persistence.Migrations
                 name: "Clientes",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nombre = table.Column<string>(type: "nvarchar(80)", maxLength: 80, nullable: false),
                     Apellido = table.Column<string>(type: "nvarchar(80)", maxLength: 80, nullable: false),
@@ -27,7 +27,7 @@ namespace Persistence.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Clientes", x => x.id);
+                    table.PrimaryKey("PK_Clientes", x => x.Id);
                 });
         }
 

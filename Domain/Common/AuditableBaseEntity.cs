@@ -8,7 +8,7 @@ namespace Domain.Common
 {
    public abstract class AuditableBaseEntity
     {
-        public virtual int id { get; set; }
+        public virtual int Id { get; set; }
 
         public string CreatedBy { get; set; }
 

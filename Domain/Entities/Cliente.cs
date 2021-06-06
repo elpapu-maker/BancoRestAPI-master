@@ -10,7 +10,7 @@ namespace Domain.Entities
     public class Cliente : AuditableBaseEntity
 
     {
-        private int _edad; 
+        private int _edad;
 
         public string Nombre { get; set; }
 

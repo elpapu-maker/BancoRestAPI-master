@@ -26,6 +26,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DTOs", "DTOs", "{57B502A2-7276-4ECF-B833-C05C912802F3}"
+	ProjectSection(SolutionItems) = preProject
+		ClienteDTO.cs = ClienteDTO.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +70,7 @@ Global
 		{088A0822-05FB-497F-BAD5-10E9F6ABA847} = {B67D246B-EB44-4F77-8C81-F513AD837E5A}
 		{34BC1F66-DA67-40BC-BB29-732490CADF74} = {B67D246B-EB44-4F77-8C81-F513AD837E5A}
 		{96841AD1-D246-4AEF-9B8D-3651655FF710} = {5624B3E6-5014-47F8-B896-F55BA6D2F5BD}
+		{57B502A2-7276-4ECF-B833-C05C912802F3} = {C9A8BE2D-EBD3-42F0-9759-33370CC7C709}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDE9E156-9E94-4C9B-A93D-4E064CD3432F}

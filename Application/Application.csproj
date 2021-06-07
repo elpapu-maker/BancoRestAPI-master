@@ -5,6 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DTOs\**" />
+    <Compile Remove="Features\Clientes\Commands\DeleteClienteCommand\**" />
+    <Compile Remove="Features\Clientes\Commands\UpdateClienteCommand\**" />
+    <EmbeddedResource Remove="DTOs\**" />
+    <EmbeddedResource Remove="Features\Clientes\Commands\DeleteClienteCommand\**" />
+    <EmbeddedResource Remove="Features\Clientes\Commands\UpdateClienteCommand\**" />
+    <None Remove="DTOs\**" />
+    <None Remove="Features\Clientes\Commands\DeleteClienteCommand\**" />
+    <None Remove="Features\Clientes\Commands\UpdateClienteCommand\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Ardalis.Specification" Version="5.1.0" />
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
@@ -15,11 +27,6 @@
 
   <ItemGroup>
     <Folder Include="Behaviours\" />
-    <Folder Include="DTOs\" />
-    <Folder Include="Features\Clientes\Commands\DeleteClienteCommand\" />
-    <Folder Include="Features\Clientes\Commands\UpdateClienteCommand\" />
-    <Folder Include="Features\Clientes\Queries\GetAllClientes\" />
-    <Folder Include="Features\Clientes\Queries\GetClienteById\" />
     <Folder Include="Filters\" />
   </ItemGroup>
 

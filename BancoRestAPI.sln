@@ -11,15 +11,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraest
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{5624B3E6-5014-47F8-B896-F55BA6D2F5BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{CDF9A58F-A828-4491-A3C8-CC8339950ECD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{CDF9A58F-A828-4491-A3C8-CC8339950ECD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{4370E00E-E246-4EC2-AB10-82E6CB52794D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{4370E00E-E246-4EC2-AB10-82E6CB52794D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{088A0822-05FB-497F-BAD5-10E9F6ABA847}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{088A0822-05FB-497F-BAD5-10E9F6ABA847}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{34BC1F66-DA67-40BC-BB29-732490CADF74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{34BC1F66-DA67-40BC-BB29-732490CADF74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{96841AD1-D246-4AEF-9B8D-3651655FF710}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{96841AD1-D246-4AEF-9B8D-3651655FF710}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3521E250-0AB3-4061-A0BC-CFD74B4A9567}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DTOs", "DTOs", "{57B502A2-7276-4ECF-B833-C05C912802F3}"
+	ProjectSection(SolutionItems) = preProject
+		ClienteDTO.cs = ClienteDTO.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +70,7 @@ Global
 		{088A0822-05FB-497F-BAD5-10E9F6ABA847} = {B67D246B-EB44-4F77-8C81-F513AD837E5A}
 		{34BC1F66-DA67-40BC-BB29-732490CADF74} = {B67D246B-EB44-4F77-8C81-F513AD837E5A}
 		{96841AD1-D246-4AEF-9B8D-3651655FF710} = {5624B3E6-5014-47F8-B896-F55BA6D2F5BD}
+		{57B502A2-7276-4ECF-B833-C05C912802F3} = {C9A8BE2D-EBD3-42F0-9759-33370CC7C709}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDE9E156-9E94-4C9B-A93D-4E064CD3432F}

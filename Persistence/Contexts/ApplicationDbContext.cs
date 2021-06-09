@@ -4,7 +4,6 @@ using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading;
@@ -15,7 +14,6 @@ namespace Persistence.Contexts
     public class ApplicationDbContext : DbContext
     {
         private readonly IDateTimeService _dateTime;
-
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IDateTimeService dateTime) : base (options)
         {
             ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
@@ -23,24 +21,31 @@ namespace Persistence.Contexts
         }
         public DbSet<Cliente> Clientes { get; set; }
 
-        public override Task<int> SaveChangesAsync(CancellationToken cancelationToken = new CancellationToken())
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
             foreach (var entry in ChangeTracker.Entries<AuditableBaseEntity>())
             {
                 switch (entry.State)
                 {
-                    case EntityState.Added:
+                    //case EntityState.Detached:
+                    //    break;
+                    //case EntityState.Unchanged:
+                    //    break;
+                    //case EntityState.Deleted:
+                    //    break;
+                    case EntityState.Modified:
                         entry.Entity.Created = _dateTime.NowUtc;
                         break;
-                    case EntityState.Modified:
+                    case EntityState.Added:
                         entry.Entity.LastModified = _dateTime.NowUtc;
                         break;
-                    default:
-                        break;
+                    //default:
+                    //    break;
                 }
             }
-            return base.SaveChangesAsync(cancelationToken);
+            return base.SaveChangesAsync(cancellationToken);
         }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

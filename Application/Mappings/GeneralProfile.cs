@@ -1,10 +1,6 @@
-﻿using Application.DTOs;
-using Application.Feauters.Clientes.Commands.CreateClienteCommand;
+﻿using Application.Features.Clientes.Commands.CreateClienteCommand;
 using AutoMapper;
 using Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Application.Mappings
 {
